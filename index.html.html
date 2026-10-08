@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darshan - CV</title>
+  <style>
+    :root {
+      --ink: #1f2937;
+      --muted: #667085;
+      --accent: #2563eb;
+      --accent-soft: #eff6ff;
+      --line: #e5e7eb;
+      --paper: #ffffff;
+      --bg: #f3f5f8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.55;
+    }
+
+    .page {
+      width: min(900px, calc(100% - 32px));
+      margin: 32px auto;
+      background: var(--paper);
+      box-shadow: 0 12px 40px rgba(15, 23, 42, 0.10);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    header {
+      padding: 42px 48px 34px;
+      background: linear-gradient(135deg, #172554, #2563eb);
+      color: white;
+    }
+
+    .name {
+      margin: 0;
+      font-size: 42px;
+      letter-spacing: -1px;
+      font-weight: 750;
+    }
+
+    .role {
+      margin: 5px 0 20px;
+      font-size: 17px;
+      opacity: .9;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      font-size: 14px;
+    }
+
+    .contact span { white-space: nowrap; }
+
+    main {
+      padding: 38px 48px 48px;
+      display: grid;
+      grid-template-columns: 1.55fr 1fr;
+      gap: 42px;
+    }
+
+    section { margin-bottom: 30px; }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 8px;
+    }
+
+    p { margin: 0; }
+
+    .objective {
+      font-size: 16px;
+      color: #374151;
+    }
+
+    .education-item {
+      margin-bottom: 18px;
+      padding-left: 16px;
+      border-left: 3px solid #bfdbfe;
+    }
+
+    .education-item:last-child { margin-bottom: 0; }
+
+    .degree {
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .school {
+      color: #4b5563;
+      font-size: 14px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li { margin: 7px 0; }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill {
+      background: var(--accent-soft);
+      color: #1d4ed8;
+      border: 1px solid #dbeafe;
+      border-radius: 999px;
+      padding: 6px 11px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .languages, .hobbies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 7px 11px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fafafa;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 18px 48px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .page { width: 100%; margin: 0; border-radius: 0; }
+      header, main { padding-left: 24px; padding-right: 24px; }
+      main { grid-template-columns: 1fr; gap: 0; }
+      .name { font-size: 34px; }
+      footer { padding-left: 24px; padding-right: 24px; }
+    }
+
+    @media print {
+      body { background: white; }
+      .page {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+      }
+      header { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .skill { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1 class="name">Darshan</h1>
+      <div class="role">BBA Student | Seeking Part-Time Opportunities</div>
+      <div class="contact">
+        <span>📞 8669655452</span>
+        <span>✉️ darshansubedar5@gmail.com</span>
+        <span>📍 Goa</span>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section>
+          <h2>Objective</h2>
+          <p class="objective">
+            Looking for any part-time job where I can learn, contribute, and develop my skills.
+          </p>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+
+          <div class="education-item">
+            <div class="degree">FYBBA</div>
+            <div class="school">
+              Srinivasa Sinai Dempo College<br>
+              Expected Graduation: 2029
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="degree">HSSC (Commerce) — 79%</div>
+            <div class="school">Vasantrao Dempo Higher Secondary, Goa Board</div>
+          </div>
+
+          <div class="education-item">
+            <div class="degree">SSC — 65%</div>
+            <div class="school">Holy Family High School, Goa Board</div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Skills</h2>
+          <div class="skills">
+            <span class="skill">Communication Skills</span>
+            <span class="skill">Teamwork</span>
+            <span class="skill">Time Management</span>
+            <span class="skill">Basic Computer Knowledge</span>
+            <span class="skill">Quick Learner</span>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <section>
+          <h2>Languages</h2>
+          <div class="languages">
+            <span class="tag">English</span>
+            <span class="tag">Hindi</span>
+            <span class="tag">Marathi</span>
+            <span class="tag">Konkani</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Hobbies</h2>
+          <div class="hobbies">
+            <span class="tag">Drawing</span>
+            <span class="tag">Football</span>
+            <span class="tag">Traveling</span>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <footer>Darshan • CV</footer>
+  </div>
+</body>
+</html>
